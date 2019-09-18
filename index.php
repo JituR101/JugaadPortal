@@ -39,7 +39,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
         <div class="s-promo-block-v3 g-bg-position--center g-fullheight--sm" style=";"id='skew1' >
             <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--sm">
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md">
-                    <h1 class="g-font-size-20--xs g-font-size-40--sm g-font-size-60--lg g-color--white g-font-weight--600">JUGAAD'18<br><span style="color:#2c83cc;">ECELL, VNIT</span></h1>
+                    <h1 class="g-font-size-20--xs g-font-size-40--sm g-font-size-60--lg g-color--white g-font-weight--600">JUGAAD'19<br><span style="color:#2c83cc;">ECELL, VNIT</span></h1>
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-push-4 g-margin-b-50--xs g-margin-b-0--md">
@@ -54,7 +54,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
                                 <div class="clearfix">
                                     <div class="pull-left">
                                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
-                                            <span class="s-promo-block-v3__date g-font-size-60--xs g-font-size-60--sm g-font-size-100--lg g-font-weight--600" style="color:#2c83cc;">20<sub class="g-font-size-20--xs g-font-size-30--lg">OCT</sub></span>
+                                            <span class="s-promo-block-v3__date g-font-size-60--xs g-font-size-60--sm g-font-size-100--lg g-font-weight--600" style="color:#2c83cc;">21<sub class="g-font-size-20--xs g-font-size-30--lg">OCT</sub></span>
                                         </div>
                                     </div>
                                     <!--<div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">-->
