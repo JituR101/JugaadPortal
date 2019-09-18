@@ -2664,7 +2664,8 @@ background: linear-gradient(to right, #26D0CE, #1A2980)!important; /* W3C, IE 10
     background: linear-gradient(340deg, rgba(44, 131, 204, 0.8), rgba(26, 41, 128, 0));
     -webkit-transform: skew(0deg,175deg);
     transform: skew(0deg,175deg);
-}
+
+
 @media(min-width:768px){
   #skew1, #skew2{
     padding-top:150px;
