@@ -114,7 +114,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
 
                     <div class="col-lg-4"></div>
                     <div class="well col-lg-4" style="padding:40px!important;margin-top:30px!important">
-                        <center style="color:red;padding-bottom:20px">Registrations Closed</center>
+                        <center style="color:red;padding-bottom:20px">Registrations Open</center>
                         <p>Please select the team size</p>
                         <form class="form-horizontal" method ="post" action="index.php">
                             <div class="form-group">
@@ -128,7 +128,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
                             <br>
                             <div class="row">
                                 <div class="col-sm-12 text-center">
-                                    <input type="submit"  disabled name="insert" value="NEXT" class="btn btn-info" style="text-align: center">
+                                    <input type="submit"  name="insert" value="NEXT" class="btn btn-info" style="text-align: center">
                                 </div>
                             </div>
                             <p class="g-font-size-20--xs g-color--black"><a href="/include/media/jugaad_information_booklet.pdf">Download Brochure</a></p>
