@@ -49,10 +49,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         $name=$_POST['name'][$index];
 
 
-        $from = "E-CELL VNIT <noreply@ecellvnit.org>";    //your mail id
+        $from = "E-CELL VNIT <contactus@ecellvnit.org>";    //your mail id
         $to = $email;
         $subject = "Registration successful";
         $body = '
+
         <!DOCTYPE html>
         <html>
             <head>

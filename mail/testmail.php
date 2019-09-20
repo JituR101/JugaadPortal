@@ -1,14 +1,14 @@
 <?php
 require_once "Mail.php";
-#include("Mail.php"); 
-$from = "Web Master <znettest@ecellvnit.org>";    //your mail id
-$to = "<sonu.wairagade@gmail.com>";
+#include("Mail.php");
+$from = "Web Master <contactus@ecellvnit.org>";    //your mail id
+$to = "<jitendra@ecellvnit.org>";
 $subject = "Feedback messgae using PHP SMTP with SSL\r\n\r\n";
 $body = "Feedback Message";
 $host = "ssl://sharedlinux.cloudhostdns.net";
 $port = "465";
-$username = "znettest@ecellvnit.org";          //your mail id
-$password = "cz%dN706";                      //password of this mail id
+$username = "jitendra@ecellvnit.org";          //your mail id
+$password = "Webgoogler@18";                      //password of this mail id
 
 $headers = array ('From' => $from,
 'To' => $to,
