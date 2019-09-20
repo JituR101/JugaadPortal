@@ -120,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     //             'username' => $username,
     //             'password' => $password));
     //     $mail = $smtp->send($to, $headers, $body);
-    }
+    
     $myFile = "$UNIQUE.php"; // or .php
     $fh = fopen($myFile, 'w'); // or die("error");
     $stringData = file_get_contents("transactions.php");
