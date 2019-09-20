@@ -104,8 +104,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         </html>';
         $host = "smtp.zoho.com";
         $port = "465";
-        $username = "contactus@ecellvnit.org";          //your mail id
-        $password = "Fjacksparrow@1";                      //password of this mail id
+        $username = "jitendra@ecellvnit.org";          //your mail id
+        $password = "Webgoogler@18";                      //password of this mail id
         $headers = array('MIME-Version' => '1.0rn',
             'Content-Type' => "text/html; charset=ISO-8859-1rn",
             'From' => $from,
