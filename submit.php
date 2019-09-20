@@ -102,9 +102,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                 </div>
             </body>
         </html>';
+
         $host = "smtp.gmail.com";
         $port = "587";
-        $username = "jitendra98rahangdale@gmail.com";          //your mail id
+        $SMTPAuth = TRUE;
+        $SMTPSecure = "tls";
+        $username = "contactus@ecellvnit.org";          //your mail id
         $password = "hxwihsmcseeedfxr";                      //password of this mail id
         $headers = array('MIME-Version' => '1.0rn',
             'Content-Type' => "text/html; charset=ISO-8859-1rn",
