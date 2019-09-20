@@ -108,10 +108,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
             </body>
         </html>';
 
-        $host = "ssl://sharedlinux.cloudhostdns.net";
+        $host = "smtp.gmail.com";
         $port = "465";
-        $username = "jitendra@ecellvnit.org";          //your mail id
-        $password = "Webgoogler@18";                      //password of this mail id
+        $username = "jitendra98rahangdale@gmail.com";          //your mail id
+        $password = "aloochat!135";                      //password of this mail id
 
         $headers = array('MIME-Version' => '1.0rn',
             'Content-Type' => "text/html; charset=ISO-8859-1rn",
