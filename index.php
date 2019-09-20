@@ -38,8 +38,9 @@ if ( isset( $_POST['submitexpo'] ) ) {
         <!--========== PROMO BLOCK ==========-->
         <div class="s-promo-block-v3 g-bg-position--center g-fullheight--sm" style=";"id="skew1" >
             <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--sm">
-                <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md">
-                    <h1 class="g-font-size-20--xs g-font-size-40--sm g-font-size-60--lg g-color--white g-font-weight--600">JUGAAD'19<br><span style="color:#2c83cc;">ECELL, VNIT</span></h1>
+                <div class="g-margin-t-30--xs g-margin-t-40--sm g-margin-b-30--xs g-margin-b-50--md">
+                    <h1 class="g-font-size-40--xs g-font-size-80--sm g-font-size-120--lg g-font-weight--600" style="color:#d43557">JUGAAD'19</h1>
+
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-push-4 g-margin-b-50--xs g-margin-b-0--md">
@@ -47,14 +48,14 @@ if ( isset( $_POST['submitexpo'] ) ) {
                         <div class="row">
                             <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
                                 <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".4s">
-                                    <p class="g-font-size-20--xs g-color--white">How much can you make with 100 bucks?</p>
+                                    <p class="g-font-size-20--xs g-font-size-20--sm g-font-size-30--lg g-font-weight--600 g-color--white">How much can you make with 100 bucks?</p>
                                 </div>
                             </div>
                             <div class="col-sm-5 col-sm-offset-1">
                                 <div class="clearfix">
                                     <div class="pull-left">
                                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
-                                            <span class="s-promo-block-v3__date g-font-size-60--xs g-font-size-60--sm g-font-size-100--lg g-font-weight--600" style="color:#2c83cc;">21<sub class="g-font-size-20--xs g-font-size-30--lg">SEPT</sub></span>
+                                            <span class="s-promo-block-v3__date g-font-size-60--xs g-font-size-60--sm g-font-size-100--lg g-font-weight--600" style="color:#d43557;">21<sub class="g-font-size-20--xs g-font-size-30--lg">SEPT</sub></span>
                                         </div>
                                     </div>
                                     <!--<div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">-->
@@ -98,7 +99,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
 
         </div>
         <!-- End About -->
-        <div style="position:relative;height:0;padding-bottom:56.24%"><iframe src="https://www.youtube.com/embed/cy9fyghGN6k?ecver=2&controls=0&showinfo=0&modestbranding=1&vq=highres&rel=0" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        <div style="position:relative;height:0;padding-bottom:56.24%"><iframe src="https://www.youtube.com/embed/zbNeZ2bGJiM?ecver=2&controls=0&showinfo=0&modestbranding=1&vq=highres&rel=0" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
         <!--========== END PROMO BLOCK ==========-->
 
