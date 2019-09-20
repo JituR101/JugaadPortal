@@ -58,14 +58,14 @@ if ( isset( $_POST['submitexpo'] ) ) {
                                             <span class="s-promo-block-v3__date g-font-size-80--xs g-font-size-60--sm g-font-size-100--lg g-font-weight--600" style="color:#d43557;">21<sub class="g-font-size-30--xs g-font-size-30--lg">SEPT</sub></span>
                                         </div>
                                     </div>
-                                
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4 col-sm-pull-8">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                            <a href=#register>
+                            <a href="#register">
                                 <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-right"></i>
                                 <span class="text-uppercase g-font-size-25--xs g-color--white g-padding-x-15--xs"><b>Register Now</b></span>
                             </a>
@@ -112,9 +112,9 @@ if ( isset( $_POST['submitexpo'] ) ) {
             </div>
             <div class="row">
 
-                    
+
                     <div class="col-md-6 col-md-offset-3" style="padding:40px!important; background: transparent;">
-                    
+
                         <p class="g-color--white g-font-size-16--xs">Please select the team size</p>
                         <form class="form-horizontal" method ="post" action="index.php">
                             <div class="form-group">
@@ -127,7 +127,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
                             </div>
                             <br>
                             <div class="row">
-                            
+
                                 <div class="g-text-center--xs">
                                     <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs">Submit</button>
                                 </div>
@@ -135,7 +135,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
                             <p class="g-font-size-20--xs g-color--black"><a href="/include/media/jugaad_information_booklet.pdf">Download Brochure</a></p>
                         </form>
                     </div>
-                    
+
                 </div>
         </div>
 
@@ -189,12 +189,12 @@ if ( isset( $_POST['submitexpo'] ) ) {
             </div>
         <!-- End Sponsors -->
         <!-- Feedback Form -->
-        
+
         <!-- End Feedback Form -->
 
 
         <!-- Patronage -->
-            
+
             <!-- End Patronage -->
 
         <!--========== END PAGE CONTENT ==========-->

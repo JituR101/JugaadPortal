@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         <div style="width:100%; background:#fff;padding:60px 50px">
 
             <?php if ($_SERVER['REQUEST_METHOD'] === 'POST'):?>
-            <p style="text-align: center; margin-top:20px;">Further Details and Instructions have been mailed to you.<br>ALL THE BEST !!!
+            <p style="text-align: center; margin-top:20px;">Further Details and Instructions will be mailed to you.<br>ALL THE BEST !!!
                 <?php
                 // if (PEAR::isError($mail)) {
                 //     // echo("<p>" . $mail->getMessage() . "</p>");
