@@ -1,59 +1,57 @@
 <?php
 // Start the session
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 session_start();
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 $SIZE = $_SESSION['SIZE'];
-
 ?>
+
 <?php
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-
     $servername = "localhost:3306";
     $username="jugaad";
     $password="VNIT@123";
-    $dbname="Jugaad18";
-
+    $dbname="Jugaad19";
     $NAME="";
     $COLLEGE="";
     $CONTACT="";
     $EMAIL="";
-
     $UNIQUE="";
-    $PREFIX="J18";
+    $PREFIX="J19";
     $teamsize=$SIZE;
     error_reporting(E_ERROR | E_PARSE);
-
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
     //connect to mysql database
     try{
-        $conn =mysqli_connect($servername,$username,$password,$dbname);
+        $conn = mysqli_connect($servername,$username,$password,$dbname);
     }catch(MySQLi_Sql_Exception $ex){
         echo("<p>Error in connecting</p>");
     }
-
+    mysqli_query($conn, "CREATE TABLE IF NOT EXISTS profit(UNIQUE_ID varchar(255), TEAMNAME varchar(255),profit varchar(255))");
     if (isset($_POST["submit"])){
         $UNIQUE=uniqid($PREFIX);
         $TEAMNAME=$_POST['teamname'];
+        if($teamsize == 3){$teamsize = 'Three';}
+        if($teamsize == 4){$teamsize = 'Four';}
+        if($teamsize == 5){$teamsize = 'Five';}
+        mysqli_query($conn, "CREATE TABLE IF NOT EXISTS $teamsize(UNIQUE_ID varchar(255), TEAMNAME varchar(255),NAME varchar(255), COLLEGE varchar(255), CONTACT varchar(255),EMAIL varchar(255))");
         foreach ($_POST['name'] as $index => $name) {
             $data1 = mysqli_real_escape_string($conn,$name);
+            $data4 = mysqli_real_escape_string($conn,$_POST['email'][$index]);
             $data2 = mysqli_real_escape_string($conn,$_POST['college'][$index]);
             $data3 = mysqli_real_escape_string($conn,$_POST['contact'][$index]);
-            $data4 = mysqli_real_escape_string($conn,$_POST['email'][$index]);
-            mysqli_query($conn, "INSERT INTO `$teamsize` (`UNIQUE_ID` ,`TEAMNAME`,`NAME`, `COLLEGE`, `CONTACT`, `EMAIL`) VALUES ('$UNIQUE','$TEAMNAME','$data1', '$data2', '$data3', '$data4')") or die(mysqli_error($conn));
+            mysqli_query($conn, "INSERT INTO $teamsize(`UNIQUE_ID` ,`TEAMNAME`,`NAME`, `COLLEGE`, `CONTACT`, `EMAIL`) VALUES ('$UNIQUE','$TEAMNAME','$data1', '$data2', '$data3', '$data4')") or die(mysqli_error($conn));
         }
     }
-
     require_once "Mail.php";
     foreach ($_POST['email'] as $index => $email) {
         $name=$_POST['name'][$index];
-
-
-        $from = "E-CELL VNIT <contactus@ecellvnit.org>";    //your mail id
+        $from = "E-CELL VNIT <noreply@ecellvnit.org>";    //your mail id
         $to = $email;
         $subject = "Registration successful";
         $body = '
-
         <!DOCTYPE html>
         <html>
             <head>
@@ -71,7 +69,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                 <div style="width:90%; background-color:#f7f9fb; padding:50px 30px;color: #212121;">
                     <h3><b>Hello '.$name.',</b></h3>
                     <p style="font-size:18px;">Thank You for registering with us. Your Unique ID is <b>'.$UNIQUE.'</b><br></p>
-
                 </div>
                 <div style="padding:60px 30px; width:90%;color: #212121;">
                     <h4>Team Guidelines for Jugaad 18\'</h4>
@@ -102,17 +99,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                     <p>+91 77384 46941</p>
                     <p>or</p>
                     <p>Mail Us: contact@ecellvnit.org</p>
-
                 </div>
-
             </body>
         </html>';
-
-        $host = "smtp.gmail.com";
+        $host = "smtp.zoho.com";
         $port = "465";
-        $username = "jitendra98rahangdale@gmail.com";          //your mail id
-        $password = "";                      //password of this mail id
-
+        $username = "conatctus@ecellvnit.org";          //your mail id
+        $password = "Fjacksparrow1";                      //password of this mail id
         $headers = array('MIME-Version' => '1.0rn',
             'Content-Type' => "text/html; charset=ISO-8859-1rn",
             'From' => $from,
@@ -124,16 +117,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                 'auth' => true,
                 'username' => $username,
                 'password' => $password));
-
         $mail = $smtp->send($to, $headers, $body);
-
     }
+  }
     $myFile = "$UNIQUE.php"; // or .php
     $fh = fopen($myFile, 'w'); // or die("error");
     $stringData = file_get_contents("transactions.php");
     fwrite($fh, $stringData);
     fclose($fh);
-
     // sql to create table
     $sql = "CREATE TABLE $UNIQUE (
     ID INT(6) AUTO_INCREMENT PRIMARY KEY,
@@ -142,11 +133,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     OUTFLOW VARCHAR(255) NOT NULL,
     reg_date TIMESTAMP
     )";
-
     $tablequery=mysqli_query($conn, $sql);
-
     $query = mysqli_query($conn, "INSERT into $UNIQUE (DETAILS, INFLOW, OUTFLOW ) values('Investment by E-cell','100','0')");
-
     $profitquery=mysqli_query($conn,"INSERT into `profit` (UNIQUE_ID, TEAMNAME, PROFIT ) values('$UNIQUE','$TEAMNAME','100')");
 }
 ?>
@@ -192,7 +180,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                 } else {
                     echo'<p style="text-align: center;margin-top:10px;">Mail successfully sent</p>';
                 }
-
                 if ($tablequery) {
                     echo '';
                 } else {
@@ -204,7 +191,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                     echo("Error description: " . mysqli_error($conn));
                     echo '<p>Error</p>';
                 }
-
                 mysqli_close($conn);
                 ?>
 
