@@ -107,8 +107,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         $port = "587";
         $SMTPAuth = TRUE;
         $SMTPSecure = "tls";
-        $username = "contactus@ecellvnit.org";          //your mail id
-        $password = "hxwihsmcseeedfxr";                      //password of this mail id
+        $username = "jitendra98rahangdale@gmail.com";          //your mail id
+        $password = "aloochat!135";                      //password of this mail id
         $headers = array('MIME-Version' => '1.0rn',
             'Content-Type' => "text/html; charset=ISO-8859-1rn",
             'From' => $from,
