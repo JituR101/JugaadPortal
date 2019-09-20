@@ -132,7 +132,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
                                     <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs">Submit</button>
                                 </div>
                             </div>
-                            <p class="g-font-size-20--xs g-color--black"><a href="/include/media/jugaad_information_booklet.pdf">Download Brochure</a></p>
+                            <p class="g-font-size-20--xs g-color--black"><a href="/include/media/brochure19.pdf">Download Brochure</a></p>
                         </form>
                     </div>
 
