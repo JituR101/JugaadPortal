@@ -98,7 +98,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
 
         </div>
         <!-- End About -->
-        <div style="position:relative;height:0;padding-bottom:56.24%"><iframe src="https://www.youtube.com/watch?v=zbNeZ2bGJiM" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        <div style="position:relative;height:0;padding-bottom:56.24%"><iframe style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media"  src="https://www.youtube.com/embed/zbNeZ2bGJiM" allowfullscreen></iframe></div>
 
         <!--========== END PROMO BLOCK ==========-->
 
@@ -168,6 +168,16 @@ if ( isset( $_POST['submitexpo'] ) ) {
                             <div class="col-md-2 col-sm-3 col-xs-6">
                                 <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">
                                     <img class="s-clients-v1" src="img/clients/STARTUP.png" alt="Madfries Logo">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-6">
+                                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".2s">
+                                    <img class="s-clients-v1" src="img/clients/Make_In_India.png" alt="ICTRD Logo">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-6">
+                                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">
+                                    <img class="s-clients-v1" src="img/clients/vnit_aa.png" alt="Saboo Home Decor Logo">
                                 </div>
                             </div>
 
