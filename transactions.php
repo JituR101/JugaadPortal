@@ -1,7 +1,7 @@
 <?php
     $filename=basename(__FILE__, '.php');
     $name=basename(__FILE__);
-    $con=mysqli_connect("localhost:3306", "jugaad","VNIT@123","Jugaad18");
+    $con=mysqli_connect("localhost:3306", "jugaad","VNIT@123","jugaad19");
     if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 
 
@@ -17,7 +17,7 @@
         }
 
         //Storing values in database
-        $con = mysqli_connect("localhost:3306", "jugaad", "VNIT@123", "Jugaad18");
+        $con = mysqli_connect("localhost:3306", "jugaad", "VNIT@123", "jugaad19");
 
         // Check connection
         if (mysqli_connect_errno()) {
