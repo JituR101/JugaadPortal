@@ -2,8 +2,8 @@
 // Start the session
 
 session_start();
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+// error_reporting(E_ALL);
+// ini_set('display_errors', '1');
 $SIZE = $_SESSION['SIZE'];
 ?>
 
@@ -120,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     //             'username' => $username,
     //             'password' => $password));
     //     $mail = $smtp->send($to, $headers, $body);
-    
+
     $myFile = "$UNIQUE.php"; // or .php
     $fh = fopen($myFile, 'w'); // or die("error");
     $stringData = file_get_contents("transactions.php");
@@ -175,12 +175,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
             <?php if ($_SERVER['REQUEST_METHOD'] === 'POST'):?>
             <p style="text-align: center; margin-top:20px;">Further Details and Instructions have been mailed to you.<br>ALL THE BEST !!!
                 <?php
-                if (PEAR::isError($mail)) {
-                    // echo("<p>" . $mail->getMessage() . "</p>");
-                    echo'<p style="text-align: center;margin-top:10px;">Facing errors while sending mail, please contact our registration desk</p>';
-                } else {
-                    echo'<p style="text-align: center;margin-top:10px;">Mail successfully sent</p>';
-                }
+                // if (PEAR::isError($mail)) {
+                //     // echo("<p>" . $mail->getMessage() . "</p>");
+                //     echo'<p style="text-align: center;margin-top:10px;">Facing errors while sending mail, please contact our registration desk</p>';
+                // } else {
+                //     echo'<p style="text-align: center;margin-top:10px;">Mail successfully sent</p>';
+                // }
                 if ($tablequery) {
                     echo '';
                 } else {
