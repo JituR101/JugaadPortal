@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         $host = "smtp.gmail.com";
         $port = "465";
         $username = "jitendra98rahangdale@gmail.com";          //your mail id
-        $password = "aloochat!135";                      //password of this mail id
+        $password = "";                      //password of this mail id
 
         $headers = array('MIME-Version' => '1.0rn',
             'Content-Type' => "text/html; charset=ISO-8859-1rn",
