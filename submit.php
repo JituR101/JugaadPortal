@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $servername = "localhost:3306";
     $username="jugaad";
     $password="VNIT@123";
-    $dbname="Jugaad19";
+    $dbname="jugaad19";
     $NAME="";
     $COLLEGE="";
     $CONTACT="";
