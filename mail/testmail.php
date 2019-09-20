@@ -1,30 +1,20 @@
 <?php
-require_once "Mail.php";
-#include("Mail.php");
-$from = "Web Master <contactus@ecellvnit.org>";    //your mail id
-$to = "<jitendra@ecellvnit.org>";
-$subject = "Feedback messgae using PHP SMTP with SSL\r\n\r\n";
-$body = "Feedback Message";
-$host = "ssl://sharedlinux.cloudhostdns.net";
-$port = "465";
-$username = "jitendra@ecellvnit.org";          //your mail id
-$password = "Webgoogler@18";                      //password of this mail id
 
-$headers = array ('From' => $from,
-'To' => $to,
-'Subject' => $subject);
-$smtp = Mail::factory('smtp',
-array ('host' => $host,
-'port' => $port,
-'auth' => true,
-'username' => $username,
-'password' => $password));
+ini_set('SMTP','smtp.zoho.com');
+ini_set('smtp_port',465);
+ini_set('sendmail_from', 'jitendra@ecellvnit.org');
 
-$mail = $smtp->send($to, $headers, $body);
+//define the receiver of the email
+$to = 'anillakshya6@gmail.com';
+//define the subject of the email
+$subject = 'Test for title';
+//define the message to be sent. Each line should be separated with \n
+$message = 'Message to send';
 
-if (PEAR::isError($mail)) {
-echo("<p>" . $mail->getMessage() . "</p>");
-} else {
-echo("<p>Message successfully sent!</p>");
-}
+//send the email
+$mail_sent = mail($to, $subject, $message, $headers);
+mail($to, $subject, $message, $headers);
+
+//if the message is sent successfully print "Mail sent correctly". Otherwise print "Mail failed"
+echo $mail_sent ? "Mail sent" : "Mail failed";
 ?>
