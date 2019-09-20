@@ -98,7 +98,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
 
         </div>
         <!-- End About -->
-        <div style="position:relative;height:0;padding-bottom:56.24%"><iframe src="https://www.youtube.com/embed/cy9fyghGN6k?ecver=2&controls=0&showinfo=0&modestbranding=1&vq=highres&rel=0" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        <div style="position:relative;height:0;padding-bottom:56.24%"><iframe src="https://www.youtube.com/watch?v=zbNeZ2bGJiM" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
         <!--========== END PROMO BLOCK ==========-->
 
@@ -152,34 +152,25 @@ if ( isset( $_POST['submitexpo'] ) ) {
 
                             <div class="col-md-2 col-sm-3 col-xs-6">
                                 <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                    <img class="s-clients-v1" src="img/clients/swiggy.png" alt="Swiggy Logo">
+                                    <img class="s-clients-v1" src="img/clients/titan.jpg" alt="Titan">
                                 </div>
                             </div>
                             <div class="col-md-2 col-sm-3 col-xs-6">
                                 <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".3s">
-                                    <img class="s-clients-v1" src="img/clients/radio_mirchi.jpg" alt="Radio Mirchi Logo">
+                                    <img class="s-clients-v1" src="img/clients/raio-mirchi.png" alt="Radio Mirchi Logo">
                                 </div>
                             </div>
                             <div class="col-md-2 col-sm-3 col-xs-6">
                                 <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".4s">
-                                    <img class="s-clients-v1" src="img/clients/simple_crm.png" alt="Simple CRM Logo">
+                                    <img class="s-clients-v1" src="img/clients/olive.jpg" alt="Simple CRM Logo">
                                 </div>
                             </div>
                             <div class="col-md-2 col-sm-3 col-xs-6">
                                 <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">
-                                    <img class="s-clients-v1" src="img/clients/madfries.png" alt="Madfries Logo">
+                                    <img class="s-clients-v1" src="img/clients/STARTUP.png" alt="Madfries Logo">
                                 </div>
                             </div>
-                            <div class="col-md-2 col-sm-3 col-xs-6">
-                                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".2s">
-                                    <img class="s-clients-v1" src="img/clients/ictrd.jpg" alt="ICTRD Logo">
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-6">
-                                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">
-                                    <img class="s-clients-v1" src="img/clients/saboo_home_decor.jpg" alt="Saboo Home Decor Logo">
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                     <!-- End Swiper Clients -->
