@@ -88,9 +88,10 @@ if(isset($_SESSION['SIZE'])){
         <br>
         <div class="row">
             <div class="col-sm-12 text-center">
+                <!-- <input type="submit" name="submit" value="REGISTER" class="btn btn-info" style="text-align: center"> -->
                 <div class="g-text-center--xs">
-                                    <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs">Submit</button>
-                                </div>
+                    <input type="submit" name="submit" value="REGISTER" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs"/>
+                </div>
             </div>
         </div>
         <br>
