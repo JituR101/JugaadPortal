@@ -10,6 +10,9 @@ if(isset($_SESSION['SIZE'])){
 <html>
 <head>
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">.form-group{
+  width: 100% !important;
+}</style>
 </head>
 <?php include("head.php");?>
 <body id="main">
@@ -47,7 +50,7 @@ if(isset($_SESSION['SIZE'])){
         <?php
         for($i=0; $i<$SIZE; $i++):
         ?>
-        <div class="col-lg-4">
+        <div class="col-lg-4 g-padding-x-10--xs">
             <h2 style="text-align: center">MEMBER <?php echo($i+1) ?></h2>
             <br>
             <div class="form-group">
@@ -82,11 +85,15 @@ if(isset($_SESSION['SIZE'])){
         </div>
         <?php endfor; ?>
         </div>
+        <br>
         <div class="row">
             <div class="col-sm-12 text-center">
-                <input type="submit" name="submit" value="REGISTER" class="btn btn-info" style="text-align: center">
+                <div class="g-text-center--xs">
+                                    <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs">Submit</button>
+                                </div>
             </div>
         </div>
+        <br>
     </form>
     <?php else:?>
     <p style="text-align: center; margin-top:60px"> Kindly Select the Team Size First!!</p>
