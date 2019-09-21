@@ -108,6 +108,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
                     <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".3s">
                         <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Get Started</p>
                         <h2 class="g-font-size-32--xs g-font-size-36--sm g-font-size-36--md g-color--white">Register Now</span></h2>
+                        <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Registrations are closed</p>
                     </div>
             </div>
             <div class="row">
@@ -118,7 +119,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
                         <p class="g-color--white g-font-size-16--xs">Please select the team size</p>
                         <form class="form-horizontal" method ="post" action="index.php">
                             <div class="form-group">
-                                <select class="form-control s-form-v2__input g-radius--50" name="SIZE" required style="color:#fff !important;background: rgba(255,255,255,0.2)!important; border:1px white solid !important">
+                                <select class="form-control s-form-v2__input g-radius--50" disabled name="SIZE" required style="color:#fff !important;background: rgba(255,255,255,0.2)!important; border:1px white solid !important">
                                     <option value="" default>TEAM SIZE</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
